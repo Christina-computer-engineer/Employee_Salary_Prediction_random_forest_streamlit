@@ -43,7 +43,6 @@ model.fit(X_train, y_train)
 # joblib.dump(encoders, "encoders.pkl")
 # joblib.dump(target_encoder, "target_encoder.pkl")
 # Save model and encoders with compression to reduce file size
-joblib.dump(model, "salary_model.pkl", compress=3)
-joblib.dump(encoders, "encoders.pkl", compress=3)
-joblib.dump(target_encoder, "target_encoder.pkl", compress=3)
-
+joblib.dump(model, "salary_model.pkl", compress=9)
+joblib.dump(encoders, "encoders.pkl", compress=9)
+joblib.dump(target_encoder, "target_encoder.pkl", compress=9)
