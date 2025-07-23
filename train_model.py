@@ -39,7 +39,11 @@ model = RandomForestClassifier(n_estimators=100, random_state=42)
 model.fit(X_train, y_train)
 
 # Save model and encoders
-joblib.dump(model, "salary_model.pkl")
-joblib.dump(encoders, "encoders.pkl")
-joblib.dump(target_encoder, "target_encoder.pkl")
+# joblib.dump(model, "salary_model.pkl")
+# joblib.dump(encoders, "encoders.pkl")
+# joblib.dump(target_encoder, "target_encoder.pkl")
+# Save model and encoders with compression to reduce file size
+joblib.dump(model, "salary_model.pkl", compress=3)
+joblib.dump(encoders, "encoders.pkl", compress=3)
+joblib.dump(target_encoder, "target_encoder.pkl", compress=3)
 
