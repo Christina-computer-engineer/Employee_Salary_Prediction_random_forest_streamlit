@@ -33,3 +33,26 @@ Run the Streamlit app in VS Code
 Use this command:
 
 streamlit run app.py
+
+📁 Project Structure
+
+├── app.py
+├── salary_model.pkl
+├── encoders.pkl
+├── target_encoder.pkl
+├── requirements.txt
+└── README.md
+
+🔍 Features
+
+    Interactive UI using Streamlit
+
+    Encoded input fields
+
+    Predicts income class (>50K / <=50K)
+
+    Visual insights (matplotlib / seaborn)
+
+📦 Requirements
+
+See requirements.txt
