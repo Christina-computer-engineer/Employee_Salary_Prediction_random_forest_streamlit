@@ -1,4 +1,4 @@
-# 🧑‍💼 Employee Salary Prediction using Streamlit
+# 🧑‍💼 Employee Salary Prediction using Random Forest & Streamlit
 
 This project predicts whether a person earns more than 50K per year based on demographic features using a Random Forest Classifier. It is deployed with Streamlit and built in Python.
 
@@ -26,17 +26,26 @@ This project predicts whether a person earns more than 50K per year based on dem
 - `encoders.pkl` — Categorical feature encoders
 - `target_encoder.pkl` — Target label encoder
 - `requirements.txt` — All Python dependencies
+- - `runtime.txt` — (Optional) Specifies Python runtime
 
 ## ▶️ How to Run
+
+Run the Streamlit app 
+
+use this link:
+
+https://christina-computer-engineer-employee-salary-predicti-app-rohmjl.streamlit.app/
 
 Run the Streamlit app in VS Code
 Use this command:
 
 streamlit run app.py
 
+
 📁 Project Structure
 
 ├── app.py
+├──runtime.txt
 ├── salary_model.pkl
 ├── encoders.pkl
 ├── target_encoder.pkl
@@ -55,4 +64,5 @@ streamlit run app.py
 
 📦 Requirements
 
-See requirements.txt
+Refer to requirements.txt for all necessary Python libraries.
+
