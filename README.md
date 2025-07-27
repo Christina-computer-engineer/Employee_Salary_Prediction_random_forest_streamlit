@@ -26,7 +26,7 @@ This project predicts whether a person earns more than 50K per year based on dem
 - `encoders.pkl` — Categorical feature encoders
 - `target_encoder.pkl` — Target label encoder
 - `requirements.txt` — All Python dependencies
-- - `runtime.txt` — (Optional) Specifies Python runtime
+-  `runtime.txt` — (Optional) Specifies Python runtime
 
 ## ▶️ How to Run
 
