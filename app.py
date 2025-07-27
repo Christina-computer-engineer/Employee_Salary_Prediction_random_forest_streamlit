@@ -172,7 +172,7 @@ importances = model.feature_importances_
 feat_df = pd.DataFrame({'Feature': X.columns, 'Importance': importances})
 feat_df = feat_df.sort_values(by="Importance", ascending=False)
 
-fig3, ax3 = plt.subplots(figsize=(6, 4))  # Smaller size
+fig3, ax3 = plt.subplots(figsize=(3, 4))  # Smaller size
 sns.barplot(x="Importance", y="Feature", data=feat_df, palette="viridis", ax=ax3)
 ax3.set_title("Feature Importance in Salary Prediction")
 st.pyplot(fig3)
