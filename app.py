@@ -157,7 +157,7 @@ st.dataframe(report_df.style.highlight_max(axis=0))
 st.subheader("📈 ROC Curve")
 fpr, tpr, _ = roc_curve(y_test, y_proba)
 auc_val = roc_auc_score(y_test, y_proba)
-fig2, ax2 = plt.subplots(figsize=(4, 3))  # Smaller size
+fig2, ax2 = plt.subplots(figsize=(3, 2))  # Smaller size
 ax2.plot(fpr, tpr, label=f"AUC = {auc_val:.2f}", color='darkorange')
 ax2.plot([0, 1], [0, 1], 'k--', label="Random Guess")
 ax2.set_xlabel("False Positive Rate")
@@ -172,7 +172,7 @@ importances = model.feature_importances_
 feat_df = pd.DataFrame({'Feature': X.columns, 'Importance': importances})
 feat_df = feat_df.sort_values(by="Importance", ascending=False)
 
-fig3, ax3 = plt.subplots(figsize=(3, 4))  # Smaller size
+fig3, ax3 = plt.subplots(figsize=(6, 4))  # Smaller size
 sns.barplot(x="Importance", y="Feature", data=feat_df, palette="viridis", ax=ax3)
 ax3.set_title("Feature Importance in Salary Prediction")
 st.pyplot(fig3)
